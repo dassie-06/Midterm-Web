@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+/* Container that aligns the logo and the menu horizontally */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Pushes logo to left, menu to right */
+  align-items: center;        /* Centers items vertically */
+  padding: 3px 20px;
+  background-color: #ffffff;
+}
+/* Style logo image */
+.logo-img {
+  height: 80px;/* Define a fixed height to prevent layout shifts */
+  width: auto;/* Keeps the original aspect ratio intact */
+  display: block;/* Removes unwanted whitespace below the image */
+}
+
+.nav-menu a {
+ margin-left: 30px;
+  text-decoration: none;
+  color: rgb(76, 87, 154);
+  font-weight: bold;
+}
+.title{
+    background:rgb(76, 87, 154);
+    text-align:center;
+    padding: 8px 2px 18px;
+}
+.title h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:72px;
+    font-weight:300;
+    letter-spacing:5px;
+    color:#ffffff;
+}
+.title p{
+  font-family:'Cormorant Garamond',serif;
+    font-size:20px;
+    color:#d3d2d2;
+}
+.contact{
+    background:white;
+    color:rgba(5, 8, 60, 0.7);
+    padding: 50px 60px 30px;
+    font-size: 1.2rem;
+    align-items: flex-start;
+}
+
+
+.contact-text{
+    flex: 2;
+}
+
+.contact-plan{
+    flex: 1;
+    background: #d8cce8;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(56, 56, 56, 0.2);
+}
+
+.contact-plan h3{
+    margin-top: 0;
+}
+
+.find-us {
+    background: #dbb3cb;
+    color:rgba(5, 8, 60, 0.7);
+    padding: 50px 60px 30px;
+    text-align:center;
+    font-size: 1.4rem;
+
+}
+
+
