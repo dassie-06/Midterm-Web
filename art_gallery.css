@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+/* Container that aligns the logo and the menu horizontally */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Pushes logo to left, menu to right */
+  align-items: center;        /* Centers items vertically */
+  padding: 3px 20px;
+  background-color: #ffffff;
+}
+
+/* Style logo image */
+.logo-img {
+  height: 80px;/* Define a fixed height to prevent layout shifts */
+  width: auto;/* Keeps the original aspect ratio intact */
+  display: block;/* Removes unwanted whitespace below the image */
+}
+
+.nav-menu a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: rgb(76, 87, 154);
+  font-weight: bold;
+}
+/*hero*/
+.hero {
+    position: relative;
+}
+    .hero img{
+        width:100%;
+        height:auto;
+        display:block;
+    }
+    .hero-text{
+        position: absolute;
+        left:5%;
+        bottom:50%;
+        width:50%;
+        color:white;
+    }
+        
+    .hero-text h1{
+        font-size: clamp(1.5rem,3vw,5rem);
+        line-height:1.2;
+        margin-bottom:20px;   
+    }
+
+/*button*/
+.btn {
+    position: absolute;
+    left: 11%;
+    bottom: 30%;
+
+    transform: translate(-50%);
+
+    padding: 15px 40px;
+    background: rgba(0, 6, 88, 0.7);
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 15px;
+
+    font-size:clamp(0.3,0.5vw,0.5rem);
+    
+}
+
+.btn:hover{
+    background:rgba(1, 4, 53, 0.7);
+}
+.btn1{
+    position: absolute;
+    left: 23%;
+    bottom: 30%;
+
+    transform: translate(-50%);
+
+    padding: 15px 40px;
+    background: white;
+    color: rgba(0, 6, 88, 0.7);
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 15px;
+
+    font-size:clamp(0.3,0.5vw,0.5rem);
+    
+}
+
+.btn1:hover{
+    background:rgba(211, 253, 0, 0.7);
+}
+
+
+/*gallery name*/
+.title{
+    background:rgb(255, 251, 218);
+    text-align:center;
+    padding: 8px 2px 18px;
+}
+.title h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:72px;
+    font-weight:300;
+    letter-spacing:10px;
+    color:rgb(76, 87, 154);
+}
+/*footer*/
+footer{
+    background:#00095d;
+    color:white;
+    padding: 50px 60px 30px;
+}
+.footer-info{
+    max-width:1600px;
+    width:100%;
+    margin: 0 auto;
+}
+.contact h2{
+    font-size:46px;
+    margin-bottom:5px;
+    font-weight:500;
+}
+.contact p{
+    font-size:20px;
+    margin-top:18px;
+    line-height:1.4;
+}
+.copyright{
+    text-align:center;
+    margin-top:80px;
+    color:#a9a9a9;
+    font-size:15px;
+}
+
+/*responsive*/
+@media (max-width: 900px) {
+    .hero-text {
+        top: 10%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-text {
+        top: 5%;
+        width: 85%;
+    }
+
+    .hero-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 5px 18px;
+    }
+}
